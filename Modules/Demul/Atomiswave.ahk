@@ -72,6 +72,7 @@ IniRead, shaderPass1, ../../Settings/%System%/%System%.ini, Shaders, shaderPass1
 IniRead, usePass2, ../../Settings/%System%/%System%.ini, Shaders, usePass2 ;~ (enable or disable)
 IniRead, shaderPass2, ../../Settings/%System%/%System%.ini, Shaders, shaderPass2 ;~ (only on gpuDXold, set FXAA, HDR-TV, SCANLINES, CARTOON, RGB DOT(MICRO), RGB DOT(TINY) or BLUR)
 
+IniWrite, %Roms_Path%, %Emulator_Path%/%Demul_ini%, files, roms0
 
 If DirectX = gpuDX11
 {
@@ -176,7 +177,6 @@ SetTitleMatchMode, 1
 WinActivate, gpuDX
 WinWaitActive, gpuDX
 WinExist("ahk_class Shell_TrayWnd")
-
 WinMove,,, -2, 0
 WinSet, Style, -0xC00000, A
 WinSet, Style, -0x40000, A
