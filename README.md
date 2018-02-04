@@ -1,7 +1,7 @@
 # HFSLauncher - WORK IN PROGRESS
 
 You need ZSpin
- - https://github.com/HFScode/zspin ) to work with this
+ - https://github.com/HFScode/zspin to work with this
 
 You need Install AutoHotKey : 
  - https://autohotkey.com/download/
